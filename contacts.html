@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Charts Page</title>
+    <title>Contacts Page</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
 </head>
 
@@ -315,68 +316,48 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Charts</h1>
-                    <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme.
-                        The charts below have been customized - for further customization options, please visit the <a
-                            target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js
-                            documentation</a>.</p>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <div class="col-xl-8 col-lg-7">
-
-                            <!-- Area Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    Styling for the area chart can be found in the
-                                    <code>/js/demo/chart-area-demo.js</code> file.
-                                </div>
+                    <!-- <h1 class="h3 mb-4 text-gray-800">Blank Page 1</h1> -->
+                    <div class="page-header">
+                        <div class="page-header-row">
+                            <div class="page-header-title">
+                                <h3 class="page-header-type">
+                                    Contacts
+                                </h3>
                             </div>
-
-                            <!-- Bar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas id="myBarChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    Styling for the bar chart can be found in the
-                                    <code>/js/demo/chart-bar-demo.js</code> file.
-                                </div>
+                            <div class="page-header-create-button">
+                                <button class="age-header-btn-type">
+                                    <b>+</b>
+                                    <span>Create Contact</span>
+                                </button>
                             </div>
-
                         </div>
-
-                        <!-- Donut Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    Styling for the donut chart can be found in the
-                                    <code>/js/demo/chart-pie-demo.js</code> file.
+                    </div>
+                    <div class="search-container">
+                        <div class="search-row">
+                            <div class="input-group">
+                                <div class="input-group-btn-left-dropdown">
+                                    <button type="button" title="filter">
+                                        <span>All</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>    
+                                <input type="text" autocomplete="username">
+                                <div class="input-group-btn-right-dropdown">
+                                    <button type="button" data-action="search" title="search">
+                                        <span class="fas fa-search">
+                                            <!-- <i class="fas fa-search"></i> -->
+                                        </span>
+                                    </button>
+                                    <button type="button" data-toggle="dropdown" title="dropdown-menu">
+                                        <span class="fas fa-ellipsis-v">
+                                            <!-- <i class="fas fa-ellipsis-v"></i> -->
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="list-container"></div>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -388,7 +369,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2022</span>
+                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
             </footer>
@@ -434,14 +415,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-    <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
 
