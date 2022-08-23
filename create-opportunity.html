@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Opportunities Page</title>
+    <title>Create Opportunity Page</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -314,282 +314,125 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <div class="page-header">
-                        <div class="page-header-row">
-                            <div class="page-header-title">
-                                <h3 class="page-header-type">
-                                    Opportunities
+                    <div class="create-page-header">
+                        <div class="create-page-header-row">
+                            <div class="create-page-header-title">
+                                <h3 class="create-page-header-type">
+                                    <a href="opportunities.html">
+                                        Opportunities
+                                    </a>
+                                    <span class="fas fa-angle-right">
+                                        <!-- <i class="fa-solid fa-angle-right"></i> -->
+                                    </span>
+                                     create
                                 </h3>
                             </div>
-                            <div class="page-header-create-button">
-                                <button class="age-header-btn-type">
-                                    <a href="create-opportunity.html">
-                                        <b>+</b> 
-                                        <span>Create Opportunity</span>
-                                    </a>
+                            <div class="create-save-cancel-btn">
+                                <button>Save</button>
+                                <button>Cancel</button>
+                                <button>
+                                    <span class="fas fa-ellipsis-h"></span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="search-container">
-                        <div class="search-row">
-                            <div class="input-group">
-                                <div class="input-group-btn-left-dropdown">
-                                    <button type="button" title="filter">
-                                        <span>All</span>
-                                        <span class="caret"></span>
-                                    </button>
-                                </div>    
-                                <input type="text" autocomplete="username">
-                                <div class="input-group-btn-right-dropdown">
-                                    <button type="button" data-action="search" title="search">
-                                        <span class="fas fa-search">
-                                            <!-- <i class="fas fa-search"></i> -->
-                                        </span>
-                                    </button>
-                                    <button type="button" data-toggle="dropdown" title="dropdown-menu">
-                                        <span class="fas fa-ellipsis-v">
-                                            <!-- <i class="fas fa-ellipsis-v"></i> -->
-                                        </span>
-                                    </button>
+                    <div class="create-page-body">
+                        <div class="create-page-body-container">
+                            <form action="" class="customer-details-form">
+
+                                <div class="input-name-container">
+                                    <label for="Name">Name <span>*</span></label>
+                                    <input type="text">
                                 </div>
-                            </div>
+
+                                <!-- The account input field should be able to fetch data from accounts -->
+                                <div class="account-input-container">
+                                    <label for="Account namme">Account</label>
+                                    <input type="text" placeholder="">
+                                </div>
+
+                                <div class="status-input-container">
+                                    <label for="status">Stage</label>
+                                    <select name="status" id="">
+                                        <option value="new">Prospecting</option>
+                                        <option value="assigned">Qualification</option>
+                                        <option value="in-process">Proposal</option>
+                                        <option value="converted">Negotiation</option>
+                                        <option value="recycled">Closed Won</option>
+                                        <option value="dead">Closed lost</option>
+                                    </select>
+                                </div>
+
+                                <div class="opportunity-amount-input-container">
+                                    <label for="opportunity-amount">Amount <span>*</span></label>
+                                    <input type="number">
+                                    <select name="currency-type" id="">
+                                        <option value="Nigerian-Naira">NGN</option>
+                                        <option value="US-Dollars">USD</option>
+                                    </select>
+                                </div>
+
+                                <div class="probability-input-container">
+                                    <label for="probability">Probability <span>% *</span></label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="closing-date-input-container">
+                                    <label for="date-closure">Closing Date</label>
+                                    <input type="date">
+                                </div>
+
+                                <!-- The contact input field should be able o fetch data from contacts -->
+                                <div class="contact-person-input-container">
+                                    <label for="contact-person">Contact</label>
+                                    <input type="text" placeholder="Select">
+                                </div>
+
+                                <div class="source-input-container">
+                                    <label for="lead-source">Lead Source</label>
+                                    <select name="source" id="">
+                                        <option value=" "> </option>
+                                        <option value="call">Call</option>
+                                        <option value="email">Email</option>
+                                        <option value="existing-customer">Existing Customer</option>
+                                        <option value="partner">Partner</option>
+                                        <option value="public-relations">Public Relations</option>
+                                        <option value="webiste">Website</option>
+                                        <option value="campaign">Campaign</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="description-input-container">
+                                    <label for="message">Description</label>
+                                    <textarea type="message" cols="40" rows="2"></textarea>
+                                </div>
+                            </form>
+                            
+                            <form action="">
+                                <div class="assigned-user-container">
+                                    <label for="assigned-user">Assigned User</label>
+                                    <select name="assigned-user" id="">
+                                        <option value="nasiru-izegwire">Nasiru Izegwire</option>
+                                        <option value="omeiza-aliu">Omeiza Aliu</option>
+                                        <option value="flora-iloukhauno">Flora Iloukhauno</option>
+                                        <option value="osmond-hart">Osmond Hart</option>
+                                        <option value="olamide-olayinka">Olamide Olayinka</option>
+                                        <option value="Muniretu-esuana">Muniretu Esuana</option>
+                                    </select>
+                                </div>
+                                <div class="assigned-user-container">
+                                    <label for="teams">Teams</label>
+                                    <select name="assigned-user" id="">
+                                        <option value="admin">Admin</option>
+                                        <option value="sales">Sales</option>
+                                        <option value="technology">Technology</option>
+                                        <option value="all">All Teams</option>
+                                    </select>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
-                    <div class="list-container">
-                        <div class="list-container-table">
-                            <table style="border: 1px solid red; margin:2em; width:90%" >
-                                <thead>
-                                    <tr>
-                                        <td>CUSTOMER</td>
-                                        <td>SERVICE</td>
-                                        <td>DESCRIPTION</td>
-                                        <td>DURATION</td>
-                                        <td>PARTNER</td>
-                                        <td>STATUS</td>
-                                        <td>D.O.C</td>
-                                        <td>EDIT</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td>EDIT</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- Page Heading -->
-                    <!-- <h1 class="h3 mb-4 text-gray-800">Blank Page 1</h1> -->
 
                 </div>
                 <!-- /.container-fluid -->

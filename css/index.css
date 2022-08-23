@@ -20,3 +20,60 @@ button {
     border: none;
     background: none;
 } */
+
+.create-page-header {
+    /* border: 1px solid red; */
+}
+
+.create-page-body {
+    /* border: 1px solid blue; */
+}
+.create-page-body-container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+.assigned-user-and-teams-form {
+    /* border: 1px solid maroon; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(245, 252, 255);
+}
+
+.customer-details-form {
+    /* border: solid yellow 1px; */
+    /* margin-top: 1em; */
+    padding: 1em;
+    background-color: rgb(245, 252, 255);
+    margin-right: 1em;
+}
+
+.overview-input-container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.details-input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input-name-container, 
+.email-input-container,
+.phone-input-container,
+.website-input-container,
+.billing-address-input-container, 
+.shipping-address-input-container,
+.assigned-user-container,
+.status-input-container,
+.industry-type-input-container,
+.description-input-container
+ {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;  
+    margin: 1em;
+}
