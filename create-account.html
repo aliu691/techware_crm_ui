@@ -318,21 +318,25 @@
                         <div class="create-page-header-row">
                             <div class="create-page-header-title">
                                 <h3 class="create-page-header-type">
-                                    <a href="accounts.html">
-                                        Accounts
-                                    </a>
-                                    <span class="fas fa-angle-right">
-                                        <!-- <i class="fa-solid fa-angle-right"></i> -->
-                                    </span>
-                                     create
+                                    <a href="accounts.html">Accounts</a>
+                                    <span class="fas fa-angle-right"></span>
+                                    create
                                 </h3>
                             </div>
                             <div class="create-save-cancel-btn">
-                                <button>Save</button>
-                                <button>Cancel</button>
-                                <button>
-                                    <span class="fas fa-ellipsis-h"></span>
-                                </button>
+                                <div class=" ">
+                                    <div class="save-btn-ctn">
+                                        <button class="save-btn">Save</button>
+                                    </div>
+                                    <div class="cancel-btn-ctn">
+                                        <button class="cancel-btn">Cancel</button>
+                                    </div>
+                                    <div class="dropdown-btn-ctn">
+                                        <button class="dropdown-btn">
+                                            <span class="fas fa-ellipsis-h"></span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -356,15 +360,15 @@
 
                                     <div class="phone-input-container">
                                         <label for="tel">Phone</label>
-                                        <div>
-                                            <select name="number-type" id="">
+                                        <div class="number-type-select-ctn">
+                                            <select name="number-type" id="" >
                                                 <option value="mobile">Office</option>
                                                 <option value="mobile">Mobile</option>
                                                 <option value="mobile">Home</option>
                                                 <option value="mobile">Fax</option>
                                                 <option value="mobile">Other</option>
                                             </select>
-                                            <input type="tel">
+                                            <input type="tel" class="phone-type-input-field">
                                         </div>
                                     </div>
 
@@ -373,7 +377,7 @@
                                         <input type="url">
                                     </div>
 
-                                    <div class="billing-address-input-container">
+                                    <div class="address-input-container">
                                         <label for="billing-address">Billing Address</label>
                                         <div>
                                             <input type="text" placeholder="Street">
@@ -386,7 +390,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="shipping-address-input-container">
+                                    <div class="address-input-container">
                                         <label for="shipping-address">Shipping Address</label>
                                         <div>
                                             <input type="text" placeholder="Street">
@@ -478,10 +482,11 @@
                                             <option value="other" >Other</option>
                                         </select>
                                     </div>
-                                    
+                                </div>
+                                <div>
                                     <div class="description-input-container">
                                         <label for="message">Description</label>
-                                        <textarea type="message" cols="40" rows="2"></textarea>
+                                        <textarea type="message"></textarea>
                                     </div>
                                 </div>
                             </form>

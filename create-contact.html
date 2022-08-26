@@ -318,80 +318,98 @@
                         <div class="create-page-header-row">
                             <div class="create-page-header-title">
                                 <h3 class="create-page-header-type">
-                                    <a href="contacts.html">
-                                        Contacts
-                                    </a>
+                                    <a href="contacts.html">Contacts</a>
                                     <span class="fas fa-angle-right">
-                                        <!-- <i class="fa-solid fa-angle-right"></i> -->
                                     </span>
                                      create
                                 </h3>
                             </div>
                             <div class="create-save-cancel-btn">
-                                <button>Save</button>
-                                <button>Cancel</button>
-                                <button>
-                                    <span class="fas fa-ellipsis-h"></span>
-                                </button>
+                                <div class="create-save-cancel-btn-ctn">
+                                    <div class="save-btn-ctn">
+                                        <button class="save-btn">Save</button>
+                                    </div>
+                                    <div class="cancel-btn-ctn">
+                                        <button class="cancel-btn">Cancel</button>
+                                    </div>
+                                    <div class="dropdown-btn-ctn">
+                                        <button class="dropdown-btn">
+                                            <span class="fas fa-ellipsis-h"></span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="create-page-body">
                         <div class="create-page-body-container">
                             <form action="" class="customer-details-form">
-                                <div class="input-name-container">
-                                    <label for="Name">Name <span>*</span></label>
-                                    <select name="title" id="">
-                                        <option value=" "> </option>
-                                        <option value="Master">Mr.</option>
-                                        <option value="Miss">Ms.</option>
-                                        <option value="Missus">Mrs.</option>
-                                        <option value="Doctor">Dr.</option>
-                                    </select>
-                                    <input type="text" placeholder="first name">
-                                    <input type="text" placeholder="last name">
-                                </div>
-
-                                <!-- The account input is suppossed to be able to fetch data from the accounts -->
-                                <div class="account-input-container">
-                                    <label for="Account namme">Account</label>
-                                    <input type="text" placeholder="">
-                                </div>
-
-                                <div class="email-input-container">
-                                    <label for="email">Email</label>
-                                    <input type="email">
-                                </div>
-
-                                <div class="phone-input-container">
-                                    <label for="tel">Phone</label>
-                                    <select name="number-type" id="">
-                                        <option value="mobile">Mobile</option>
-                                        <option value="mobile">Office</option>
-                                        <option value="mobile">Home</option>
-                                        <option value="mobile">Fax</option>
-                                        <option value="mobile">Other</option>
-                                    </select>
-                                    <input type="tel">
-                                </div>
-
-                                <div class="address-input-container">
-                                    <label for="address">Address</label>
-                                    <input type="text" placeholder="Street">
-                                    <div class="sub-address-input">
-                                        <input type="text" placeholder="City">
-                                        <input type="text" placeholder="State">
-                                        <input type="text" placeholder="Postal code">
+                                <div class="overview-input-container">
+                                    <div class="input-name-container">
+                                        <label for="Name">Name <span>*</span></label>
+                                        <div class="name-field-ctn">
+                                            <div class="name-field-select-ctn">
+                                                <select name="title" id="">
+                                                    <option value=" "> </option>
+                                                    <option value="Master">Mr.</option>
+                                                    <option value="Miss">Ms.</option>
+                                                    <option value="Missus">Mrs.</option>
+                                                    <option value="Doctor">Dr.</option>
+                                                </select>
+                                            </div>
+                                            <div class="first-last-name-ctn">
+                                                <input type="text" placeholder="first name">
+                                            </div>
+                                            <div class="first-last-name-ctn">
+                                                <input type="text" placeholder="last name">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <input type="text" placeholder="Country">
+
+                                    <!-- The account input is suppossed to be able to fetch data from the accounts -->
+                                    <div class="account-input-container">
+                                        <label for="Account namme">Account</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+
+                                    <div class="email-input-container">
+                                        <label for="email">Email</label>
+                                        <input type="email">
+                                    </div>
+
+                                    <div class="phone-input-container">
+                                        <label for="tel">Phone</label>
+                                        <div class="number-type-select-ctn">
+                                            <select name="number-type" id="">
+                                                <option value="mobile">Mobile</option>
+                                                <option value="mobile">Office</option>
+                                                <option value="mobile">Home</option>
+                                                <option value="mobile">Fax</option>
+                                                <option value="mobile">Other</option>
+                                            </select>
+                                            <input type="tel">
+                                        </div>
+                                    </div>
+
+                                    <div class="address-input-container">
+                                        <label for="address">Address</label>
+                                        <input type="text" placeholder="Street">
+                                        <div class="sub-address-input">
+                                            <input type="text" placeholder="City">
+                                            <input type="text" placeholder="State">
+                                            <input type="text" placeholder="Postal code">
+                                        </div>
+                                        <input type="text" placeholder="Country">
+                                    </div>
                                 </div>
-                                
-                                <div class="description-input-container">
-                                    <label for="message">Description</label>
-                                    <textarea type="message" cols="40" rows="2"></textarea>
+                                <div>
+                                    <div class="description-input-container">
+                                        <label for="message">Description</label>
+                                        <textarea type="message"></textarea>
+                                    </div>
                                 </div>
                             </form>
-                            <form action="">
+                            <form action="" class="assigned-user-and-teams-form">
                                 <div class="assigned-user-container">
                                     <label for="assigned-user">Assigned User</label>
                                     <select name="assigned-user" id="">

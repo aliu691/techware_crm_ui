@@ -318,21 +318,25 @@
                         <div class="create-page-header-row">
                             <div class="create-page-header-title">
                                 <h3 class="create-page-header-type">
-                                    <a href="leads.html">
-                                        Leads
-                                    </a>
-                                    <span class="fas fa-angle-right">
-                                        <!-- <i class="fa-solid fa-angle-right"></i> -->
-                                    </span>
-                                     create
+                                    <a href="leads.html">Leads</a>
+                                    <span class="fas fa-angle-right"></span>
+                                    create
                                 </h3>
                             </div>
                             <div class="create-save-cancel-btn">
-                                <button>Save</button>
-                                <button>Cancel</button>
-                                <button>
-                                    <span class="fas fa-ellipsis-h"></span>
-                                </button>
+                                <div class="create-save-cancel-btn-ctn">
+                                    <div class="save-btn-ctn">
+                                        <button class="save-btn">Save</button>
+                                    </div>
+                                    <div class="cancel-btn-ctn">
+                                        <button class="cancel-btn">Cancel</button>
+                                    </div>
+                                    <div class="dropdown-btn-ctn">
+                                        <button class="dropdown-btn">
+                                           <span class="fas fa-ellipsis-h"></span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -343,58 +347,73 @@
                                 <div class="form-heading-name">
                                     <h5>Overview</h5>
                                 </div>
-
-                                <div class="input-name-container">
-                                    <label for="Name">Name <span>*</span></label>
-                                    <select name="title" id="">
-                                        <option value=" "> </option>
-                                        <option value="Master">Mr.</option>
-                                        <option value="Miss">Ms.</option>
-                                        <option value="Missus">Mrs.</option>
-                                        <option value="Doctor">Dr.</option>
-                                    </select>
-                                    <input type="text" placeholder="first name">
-                                    <input type="text" placeholder="last name">
-                                </div>
-
-                                <div class="account-input-container">
-                                    <label for="Account namme">Account</label>
-                                    <input type="text" placeholder="">
-                                </div>
-
-                                <div class="email-input-container">
-                                    <label for="email">Email</label>
-                                    <input type="email">
-                                </div>
-
-                                <div class="phone-input-container">
-                                    <label for="tel">Phone</label>
-                                    <select name="number-type" id="">
-                                        <option value="mobile">Mobile</option>
-                                        <option value="mobile">Office</option>
-                                        <option value="mobile">Home</option>
-                                        <option value="mobile">Fax</option>
-                                        <option value="mobile">Other</option>
-                                    </select>
-                                    <input type="tel">
-                                </div>
-
-                                <div class="website-input-container">
-                                    <label for="website-link">Website</label>
-                                    <input type="url">
-                                </div>
-
-                                <div class="address-input-container">
-                                    <label for="address">Address</label>
-                                    <input type="text" placeholder="Street">
-                                    <div class="sub-address-input">
-                                        <input type="text" placeholder="City">
-                                        <input type="text" placeholder="State">
-                                        <input type="text" placeholder="Postal code">
+                                <div class="overview-input-container">
+                                    <div class="input-name-container">
+                                        <label for="Name">Name <span>*</span></label>
+                                        <div class="name-field-ctn">
+                                            <div class="name-field-select-ctn">
+                                                <select name="title" id="">
+                                                    <option value=" "> </option>
+                                                    <option value="Master">Mr.</option>
+                                                    <option value="Miss">Ms.</option>
+                                                    <option value="Missus">Mrs.</option>
+                                                    <option value="Doctor">Dr.</option>
+                                                </select>
+                                            </div>
+                                            <div class="first-last-name-ctn">
+                                                <input type="text" placeholder="first name">
+                                            </div>
+                                            <div class="first-last-name-ctn">
+                                                <input type="text" placeholder="last name">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <input type="text" placeholder="Country">
-                                </div>
 
+                                    <div class="account-input-container">
+                                        <label for="Account namme">Account</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+
+                                    <div class="email-input-container">
+                                        <label for="email">Email</label>
+                                        <input type="email">
+                                    </div>
+
+                                    <div class="phone-input-container">
+                                        <label for="tel">Phone</label>
+                                        <div class="number-type-select-ctn">
+                                            <select name="number-type" id="">
+                                                <option value="mobile">Mobile</option>
+                                                <option value="mobile">Office</option>
+                                                <option value="mobile">Home</option>
+                                                <option value="mobile">Fax</option>
+                                                <option value="mobile">Other</option>
+                                            </select>
+                                            <input type="tel">
+                                        </div>
+                                    </div>
+
+                                    <div class="title-input-container">
+                                        <label for="title/rank">Title</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <div class="website-input-container">
+                                        <label for="website-link">Website</label>
+                                        <input type="url">
+                                    </div>
+
+                                    <div class="address-input-container">
+                                        <label for="address">Address</label>
+                                        <input type="text" placeholder="Street">
+                                        <div class="sub-address-input">
+                                            <input type="text" placeholder="City">
+                                            <input type="text" placeholder="State">
+                                            <input type="text" placeholder="Postal code">
+                                        </div>
+                                        <input type="text" placeholder="Country">
+                                    </div>
+                                </div>
                                 <div class="form-break">
                                     <hr>
                                 </div>
@@ -403,106 +422,112 @@
                                     <h5>Details</h5>
                                 </div>
 
-                                <div class="status-input-container">
-                                    <label for="status">Status</label>
-                                    <select name="status" id="">
-                                        <option value="new">New</option>
-                                        <option value="assigned">Assigned</option>
-                                        <option value="in-process">In Process</option>
-                                        <option value="converted">Converted</option>
-                                        <option value="recycled">Recycled</option>
-                                        <option value="dead">Dead</option>
-                                    </select>
-                                </div>
+                                <div class="details-input-container">
+                                    <div class="status-input-container">
+                                        <label for="status">Status</label>
+                                        <select name="status" id="">
+                                            <option value="new">New</option>
+                                            <option value="assigned">Assigned</option>
+                                            <option value="in-process">In Process</option>
+                                            <option value="converted">Converted</option>
+                                            <option value="recycled">Recycled</option>
+                                            <option value="dead">Dead</option>
+                                        </select>
+                                    </div>
 
-                                <div class="source-input-container">
-                                    <label for="source">Source</label>
-                                    <select name="source" id="">
-                                        <option value=" "> </option>
-                                        <option value="call">Call</option>
-                                        <option value="email">Email</option>
-                                        <option value="existing-customer">Existing Customer</option>
-                                        <option value="partner">Partner</option>
-                                        <option value="public-relations">Public Relations</option>
-                                        <option value="webiste">Website</option>
-                                        <option value="campaign">Campaign</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
+                                    <div class="source-input-container">
+                                        <label for="source">Source</label>
+                                        <select name="source" id="">
+                                            <option value=" "> </option>
+                                            <option value="call">Call</option>
+                                            <option value="email">Email</option>
+                                            <option value="existing-customer">Existing Customer</option>
+                                            <option value="partner">Partner</option>
+                                            <option value="public-relations">Public Relations</option>
+                                            <option value="webiste">Website</option>
+                                            <option value="campaign">Campaign</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
 
-                                <div class="opportunity-amount-input-container">
-                                    <label for="opportunity-amount">Opportunity Amount</label>
-                                    <input type="number">
-                                    <select name="currency-type" id="">
-                                        <option value="Nigerian-Naira">NGN</option>
-                                        <option value="US-Dollars">USD</option>
-                                    </select>
-                                </div>
+                                    <div class="opportunity-amount-input-container">
+                                        <label for="opportunity-amount">Opportunity Amount</label>
+                                        <div class="currency-type-select-ctn">
+                                            <input type="number">
+                                            <select name="currency-type" id="">
+                                                <option value="Nigerian-Naira">NGN</option>
+                                                <option value="US-Dollars">USD</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
-                                <div class="industry-type-input-container">
-                                    <label for="industry-type">Industry</label>
-                                    <select name="industry" id="">
-                                        <option value="" ></option>
-                                        <option value="advertising"> Advertising</option>
-                                        <option value="aerospace">Aerospace</option>
-                                        <option value="agriculture">Agriculture</option>
-                                        <option value="apparel-&-accessories">Apparel & Accessories</option>
-                                        <option value="architecture">Architecture</option>
-                                        <option value="automotive">Automotive</option>
-                                        <option value="banking">Banking</option>
-                                        <option value="biotechnology">Biotechnology</option>
-                                        <option value="building-material-&-equipment" >Building Materials & Equipments</option>
-                                        <option value="chemical">Chemical</option>
-                                        <option value="computer">Computer</option>
-                                        <option value="construction">Construction</option>
-                                        <option value="consulting">Consulting</option>
-                                        <option value="creative">Creative</option>
-                                        <option value="culture">Culture</option>
-                                        <option value="defense" >Defense</option>
-                                        <option value="electric-power" >Power</option>
-                                        <option value="education" >Eduaction</option>
-                                        <option value="electronics" >Electronics</option>
-                                        <option value="energy" >Energy</option>
-                                        <option value="entertainment-&-leisure" >Entertainment&Leisure</option>
-                                        <option value="finace" >Finace</option>
-                                        <option value="food-&-beverage" >Food&beverages</option>
-                                        <option value="Grocery" >Grocery</option>
-                                        <option value="healthcare" >Healthcare</option>
-                                        <option value="hospitality" >Hospitality</option>
-                                        <option value="insurance" >Insurance</option>
-                                        <option value="legal" >Legal</option>
-                                        <option value="manufacturing" >Manufacturing</option>
-                                        <option value="mass-media" >Mass Media</option>
-                                        <option value="marketing" >Marketing</option>
-                                        <option value="mining" >Mining</option>
-                                        <option value="music" >Music</option>
-                                        <option value="petroleum" >Petroleum</option>
-                                        <option value="publishing" >Publishing</option>
-                                        <option value="retail" >Retail</option>
-                                        <option value="real-estate" >Real estate</option>
-                                        <option value="service" >Service</option>
-                                        <option value="shipping" >Shipping</option>
-                                        <option value="software" >Software</option>
-                                        <option value="sports" >Sport</option>
-                                        <option value="support" >Support</option>
-                                        <option value="technology" >Technology</option>
-                                        <option value="telecommunications" >Telecommuinications</option>
-                                        <option value="television" >Television</option>
-                                        <option value="testing,-inspection-&-certifications" >Testing, Inspection&Certificate</option>
-                                        <option value="transportation" >Transportation</option>
-                                        <option value="travel" >Travel</option>
-                                        <option value="venture-capital" >Venture Capital</option>
-                                        <option value="water" >water</option>
-                                        <option value="wholesale" >wholesale</option>
-                                        <option value="other" >Other</option>
-                                    </select>
+                                    <div class="industry-type-input-container">
+                                        <label for="industry-type">Industry</label>
+                                        <select name="industry" id="">
+                                            <option value="" ></option>
+                                            <option value="advertising"> Advertising</option>
+                                            <option value="aerospace">Aerospace</option>
+                                            <option value="agriculture">Agriculture</option>
+                                            <option value="apparel-&-accessories">Apparel & Accessories</option>
+                                            <option value="architecture">Architecture</option>
+                                            <option value="automotive">Automotive</option>
+                                            <option value="banking">Banking</option>
+                                            <option value="biotechnology">Biotechnology</option>
+                                            <option value="building-material-&-equipment" >Building Materials & Equipments</option>
+                                            <option value="chemical">Chemical</option>
+                                            <option value="computer">Computer</option>
+                                            <option value="construction">Construction</option>
+                                            <option value="consulting">Consulting</option>
+                                            <option value="creative">Creative</option>
+                                            <option value="culture">Culture</option>
+                                            <option value="defense" >Defense</option>
+                                            <option value="electric-power" >Power</option>
+                                            <option value="education" >Eduaction</option>
+                                            <option value="electronics" >Electronics</option>
+                                            <option value="energy" >Energy</option>
+                                            <option value="entertainment-&-leisure" >Entertainment&Leisure</option>
+                                            <option value="finace" >Finace</option>
+                                            <option value="food-&-beverage" >Food&beverages</option>
+                                            <option value="Grocery" >Grocery</option>
+                                            <option value="healthcare" >Healthcare</option>
+                                            <option value="hospitality" >Hospitality</option>
+                                            <option value="insurance" >Insurance</option>
+                                            <option value="legal" >Legal</option>
+                                            <option value="manufacturing" >Manufacturing</option>
+                                            <option value="mass-media" >Mass Media</option>
+                                            <option value="marketing" >Marketing</option>
+                                            <option value="mining" >Mining</option>
+                                            <option value="music" >Music</option>
+                                            <option value="petroleum" >Petroleum</option>
+                                            <option value="publishing" >Publishing</option>
+                                            <option value="retail" >Retail</option>
+                                            <option value="real-estate" >Real estate</option>
+                                            <option value="service" >Service</option>
+                                            <option value="shipping" >Shipping</option>
+                                            <option value="software" >Software</option>
+                                            <option value="sports" >Sport</option>
+                                            <option value="support" >Support</option>
+                                            <option value="technology" >Technology</option>
+                                            <option value="telecommunications" >Telecommuinications</option>
+                                            <option value="television" >Television</option>
+                                            <option value="testing,-inspection-&-certifications" >Testing, Inspection&Certificate</option>
+                                            <option value="transportation" >Transportation</option>
+                                            <option value="travel" >Travel</option>
+                                            <option value="venture-capital" >Venture Capital</option>
+                                            <option value="water" >water</option>
+                                            <option value="wholesale" >wholesale</option>
+                                            <option value="other" >Other</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="description-input-container">
-                                    <label for="message">Description</label>
-                                    <textarea type="message" cols="40" rows="2"></textarea>
+                                <div>
+                                    <div class="description-input-container">
+                                        <label for="message">Description</label>
+                                        <textarea type="messag"></textarea>
+                                    </div>
                                 </div>
                             </form>
-                            <form action="">
+                            <form action="" class="assigned-user-and-teams-form">
                                 <div class="assigned-user-container">
                                     <label for="assigned-user">Assigned User</label>
                                     <select name="assigned-user" id="">
