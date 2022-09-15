@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Contacts Page</title>
+    <title>Create Lead Page</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -314,283 +314,243 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <!-- <h1 class="h3 mb-4 text-gray-800">Blank Page 1</h1> -->
-                    <div class="page-header">
-                        <div class="page-header-row">
-                            <div class="page-header-title">
-                                <h3 class="page-header-type">
-                                    Contacts
+                    <div class="create-page-header">
+                        <div class="create-page-header-row">
+                            <div class="create-page-header-title">
+                                <h3 class="create-page-header-type">
+                                    <a href="leads.html">Leads</a>
+                                    <span class="fas fa-angle-right"></span>
+                                    Abdussamad Suleiman
                                 </h3>
                             </div>
-                            <div class="page-header-create-button">
-                                <button class="page-header-btn-type">
-                                    <a href="create-contact.html">
-                                        <span class="fas fa-plus"></span>
-                                        <span>Create Contact</span>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="search-container">
-                        <div class="search-row">
-                            <div class="input-group-search">
-                                <div class="input-group-btn-left-dropdown">
-                                    <button type="button" title="filter">
-                                        <span>All</span>
-                                        <span class="caret"></span>
-                                    </button>
-                                </div>    
-                                <input type="text" autocomplete="username">
-                                <div class="input-group-btn-right-search">
-                                    <button type="button" data-action="search" title="search">
-                                        <span class="fas fa-search"> </span>
-                                    </button>
-                                </div>
-                                <div class="input-group-btn-right-dropdown">
-                                    <button type="button" data-toggle="dropdown" title="dropdown-menu">
-                                        <span class="fas fa-ellipsis-v"> </span>
-                                    </button>
+                            <div class="create-save-cancel-btn">
+                                <div class="create-save-cancel-btn-ctn">
+                                    <div class="save-btn-ctn">
+                                        <button class="save-btn">Edit</button>
+                                    </div>
+                                    <div class="dropdown-btn-ctn">
+                                        <button class="dropdown-btn">
+                                           <span class="fas fa-ellipsis-h"></span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="list-container">
-                        <div class="list-container-table">
-                            <table class="account-list-table">
-                                <thead>
-                                    <tr>
-                                        <td>CUSTOMER</td>
-                                        <td>SERVICE</td>
-                                        <td>DESCRIPTION</td>
-                                        <td>DURATION</td>
-                                        <td>PARTNER</td>
-                                        <td>STATUS</td>
-                                        <td>D.O.C</td>
-                                        <td>EDIT</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                    <div class="create-page-body">
+                        <div class="create-page-body-container">
+                            <form action="" class="customer-details-form">
 
-                                    <tr>
-                                        <td><a href="/view-contact.html">Snitch</a></td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                <div class="form-heading-name">
+                                    <h5>Overview</h5>
 
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
-<!-- 
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                </div>
+                                <div class="overview-input-container">
+                                    <div class="input-name-container">
+                                        <label for="Name">Name</label>
+                                        <div class="name-field-ctn">
+                                            <div class="name-field-select-ctn">
+                                                <div><p>Mr</p></div>
+                                                <div><p>Abdussamad</p></div>
+                                                <div><p>Suleiman</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="account-input-container">
+                                        <label for="Account namme">Account</label>
+                                        <div>
+                                            <p>Techware Profesional Services Limited</p>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="email-input-container">
+                                        <label for="email">Email</label>
+                                        <div>
+                                            <p>suleiman@techware.ng</p>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="phone-input-container">
+                                        <label for="tel">Phone</label>
+                                        <div class="number-type-select-ctn">
+                                            <div>
+                                                <p>Mobile</p>
+                                            </div>
+                                            <div>
+                                                <p>08088000632</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="title-input-container">
+                                        <label for="title/rank">Title</label>
+                                        <div>
+                                            <p>Presales Engineer</p>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="website-input-container">
+                                        <label for="website-link">Website</label>
+                                        <div>
+                                            <p>www.suleimantechware.ng</p>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="address-input-container">
+                                        <label for="address">Address</label>
+                                        <div>
+                                            <p>na that same street nah</p>
+                                        </div>
+                                        <div>
+                                            <p>FCT</p>
+                                            <p>Abuja</p>
+                                            <p>901901</p>
+                                        </div>
+                                        <div>
+                                            <p>Nigeria</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>Details</h5>
+                                </div>
 
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                <div class="details-input-container">
+                                    <div class="status-input-container">
+                                        <label for="status">Status</label>
+                                        <div>
+                                            <p>Assigned</p>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="source-input-container">
+                                        <label for="source">Source</label>
+                                        <div>
+                                            <p>Existing Customer</p>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="opportunity-amount-input-container">
+                                        <label for="opportunity-amount">Opportunity Amount</label>
+                                        <div class="currency-type-select-ctn">
+                                            <div>
+                                                <p>10,000,000.00</p>
+                                            </div>
+                                            <div>
+                                                <p>NGN</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                    <div class="industry-type-input-container">
+                                        <label for="industry-type">Industry</label>
+                                        <div>
+                                            <p>Technology</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                <div>
+                                    <div class="description-input-container">
+                                        <label for="message">Description</label>
+                                        <div>
+                                            <p>
+                                                Suleiman Abdussamad is a Presales Engineer at Techware Professional Services Limited,
+                                                He is an intern though but has potentials at influencing cloud related stuffs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                <div class="form-break">
+                                    <hr>
+                                </div>
 
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                <div class="assigned-and-team-container">
+                                    <div class="assigned-user-container">
+                                        <label for="assigned-user">Assigned User</label>
+                                        <div>
+                                            <p>Omeiza Aliu</p>
+                                        </div>
+                                    </div>
+                                    <div class="assigned-user-container">
+                                        <label for="teams">Teams</label>
+                                        <div>
+                                            <p>Technology</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <tr>
-                                        <td>UNIBEN</td>
-                                        <td>Fortinet</td>
-                                        <td>Forti-Guard Demo</td>
-                                        <td>3 weeks</td>
-                                        <td>DGIT</td>
-                                        <td>COMPLETE</td>
-                                        <td>2020-10-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>Stream</h5>
+                                    <div>
+                                        <p>
+                                            coming soon
+                                        </p>
+                                    </div>
+                                </div>
 
-                                    <tr>
-                                        <td>ITF</td>
-                                        <td>Evernex</td>
-                                        <td>Maintenance</td>
-                                        <td>1 week</td>
-                                        <td>Evernex</td>
-                                        <td>QUALIFICATION</td>
-                                        <td>2021-12-10</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr>
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>Targeted Lists</h5>
+                                    <div>
+                                        <p>
+                                            coming soon
+                                        </p>
+                                    </div>
+                                </div>
 
-                                    <tr>
-                                        <td>CBN</td>
-                                        <td>NOTAP</td>
-                                        <td>Process Payment Certificate</td>
-                                        <td>7 weeks</td>
-                                        <td>TECHWARE</td>
-                                        <td>QUOTE</td>
-                                        <td>2022-08-22</td>
-                                        <td><button type="menu">EDIT</button></td>
-                                    </tr> -->
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>Activities</h5>
+                                    <div>
+                                        <p>
+                                            coming soon
+                                        </p>
+                                    </div>
+                                </div>
 
-                                </tbody>
-                            </table>
-                            <div>
-                                <span>
-                                    <a href="#">show more</a>
-                                </span>
-                            </div>
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>History</h5>
+                                    <div>
+                                        <p>
+                                            coming soon
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>Tasks</h5>
+                                    <div>
+                                        <p>
+                                            coming soon
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
 
@@ -604,7 +564,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Your Website 2022</span>
                     </div>
                 </div>
             </footer>
