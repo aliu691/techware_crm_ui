@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stream_Log Page</title>
+    <title>Create User Page</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -315,9 +315,173 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <div class="create-page-header">
+                        <div class="create-page-header-row">
+                            <div class="create-page-header-title">
+                                <h3 class="create-page-header-type">
+                                    <a href="users.html">User</a>
+                                    <span class="fas fa-angle-right"></span>
+                                    create
+                                </h3>
+                            </div>
+                            <div class="create-save-cancel-btn">
+                                <div class="create-save-cancel-btn-ctn">
+                                    <div class="save-btn-ctn">
+                                        <button class="save-btn">Save</button>
+                                    </div>
+                                    <div class="cancel-btn-ctn">
+                                        <button class="cancel-btn">Cancel</button>
+                                    </div>
+                                    <div class="dropdown-btn-ctn">
+                                        <button class="dropdown-btn">
+                                           <span class="fas fa-ellipsis-h"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-page-body">
+                        <div class="create-page-body-container">
+                            <form action="" class="customer-details-form">
+                                <div class="overview-input-container">
+                                    <div class="input-name-container">
+                                        <label for="Account namme">Username <span>*</span></label>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    <div class="input-name-container">
+                                        <label for="Name">Name <span>*</span></label>
+                                        <div class="name-field-ctn">
+                                            <div class="name-field-select-ctn">
+                                                <select name="title" id="">
+                                                    <option value=" "> </option>
+                                                    <option value="Master">Mr.</option>
+                                                    <option value="Miss">Ms.</option>
+                                                    <option value="Missus">Mrs.</option>
+                                                    <option value="Doctor">Dr.</option>
+                                                </select>
+                                            </div>
+                                            <div class="first-last-name-ctn">
+                                                <input type="text" placeholder="first name">
+                                            </div>
+                                            <div class="first-last-name-ctn">
+                                                <input type="text" placeholder="last name">
+                                            </div>
+                                        </div>
+                                    </div>
 
-                    <!-- Page Heading -->
-                    <!-- <h1 class="h3 mb-4 text-gray-800">Blank Page 1</h1> -->
+                                    <div class="account-input-container">
+                                        <label for="Account namme">Title</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+
+                                    <div class="email-input-container">
+                                        <label for="email">Email</label>
+                                        <input type="email">
+                                    </div>
+
+                                    <div class="phone-input-container">
+                                        <label for="tel">Phone</label>
+                                        <div class="number-type-select-ctn">
+                                            <select name="number-type" id="">
+                                                <option value="mobile">Mobile</option>
+                                                <option value="mobile">Office</option>
+                                                <option value="mobile">Home</option>
+                                                <option value="mobile">Fax</option>
+                                                <option value="mobile">Other</option>
+                                            </select>
+                                            <input type="tel">
+                                        </div>
+                                    </div>
+
+                                    <div class="gender-input-container">
+                                        <label for="gender-input-container">Gender</label>
+                                        <select name="gender" id="">
+                                            <option value="new">Not Set</option>
+                                            <option value="assigned">Male</option>
+                                            <option value="in-process">Female</option>
+                                            <option value="converted">Hermophrodite</option>
+                                            <option value="recycled">LGBTQ</option>
+                                            <option value="dead">Prefer to not disclose</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>Teams and Access Controls</h5>
+                                </div>
+
+                                <div class="details-input-container">
+                                    <div class="type-input-container">
+                                        <label for="type">Type</label>
+                                        <select name="type" id="">
+                                            <option value="new">Regular</option>
+                                            <option value="assigned">Admin</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="type-input-container">
+                                        <label for="type">Is Active</label>
+                                        <select name="type" id="">
+                                            <option value="new">Yes</option>
+                                            <option value="assigned">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="assigned-user-container">
+                                        <label for="teams">Teams</label>
+                                        <select name="assigned-user" id="">
+                                            <option value="admin">Admin</option>
+                                            <option value="sales">Sales</option>
+                                            <option value="technology">Technology</option>
+                                            <option value="all">All Teams</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="assigned-user-container">
+                                        <label for="teams">Default Team</label>
+                                        <select name="assigned-user" id="">
+                                            <option value="admin">Sales</option>
+                                            <option value="sales">Admin</option>
+                                            <option value="technology">Technology</option>
+                                            <option value="all">All Teams</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="assigned-user-container">
+                                        <label for="teams">Role</label>
+                                        <select name="assigned-user" id="">
+                                            <option value="admin">Admin</option>
+                                            <option value="sales">Sub-admin</option>
+                                            <option value="technology">User</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-break">
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-heading-name">
+                                    <h5>Password</h5>
+                                </div>
+
+                                <div class="password-input-container">
+                                    <div class="password-input-ctn">
+                                        <label for="Password">Password</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <div class="password-input-ctn">
+                                        <label for="Password">Confirm Password</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
                 </div>
                 <!-- /.container-fluid -->
