@@ -259,7 +259,10 @@ input:focus {
 .opportunity-amount-input-container,
 .probability-input-container,
 .closing-date-input-container,
-.contact-person-input-container {
+.contact-person-input-container,
+.gender-input-container,
+.type-input-container,
+.password-input-ctn {
     display: flex;
     flex-direction: column;
     /* border: double red 1px; */
@@ -346,7 +349,8 @@ textarea:focus {
     width: 100%;
 }
 
-.details-input-container {
+.details-input-container,
+.password-input-container {
     /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
